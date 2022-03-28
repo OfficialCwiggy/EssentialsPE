@@ -1,19 +1,19 @@
 name: EssentialsPE
 main: EssentialsPE\Loader
 version: 2.1.0
-api: [3.0.0]
+api: [4.0.0]
 author: LegendsOfMCPE Team
 website: https://github.com/LegendOfMCPE/EssentialsPE
 
-permissions:
+commands:
     essentials:
         default: false
         description: "Allow to access to every EssentialsPE feature"
-        children:
+        permissions:
             essentials.ban:
                 default: false
                 description: "Ban utilities nodes"
-                children:
+                
                     essentials.ban.exempt:
                         default: op
                         description: "Prevent the player from being banned"
@@ -23,7 +23,7 @@ permissions:
             essentials.afk:
                 default: false
                 description: "Toggle the AFK status"
-                children:
+                
                     essentials.afk.use:
                         default: true
                         description: "Change self AFK status"
@@ -42,7 +42,7 @@ permissions:
             essentials.back:
                 default: false
                 description: "Return to your previous spot before teleporting"
-                children:
+                
                     essentials.back.use:
                         default: op
                         description: "Return to your previous spot before teleporting"
@@ -52,7 +52,7 @@ permissions:
             essentials.break:
                 default: false
                 description: "Breaks the block you're looking at"
-                children:
+                
                     essentials.break.use:
                         default: op
                         description: "Breaks the block you're looking at"
@@ -68,7 +68,7 @@ permissions:
             essentials.clearinventory:
                 default: false
                 description: "Clear a player inventory"
-                children:
+                
                     essentials.clearinventory.use:
                         default: op
                         description: "Clear self inventory"
@@ -96,7 +96,7 @@ permissions:
             essentials.extinguish:
                 default: false
                 description: "Extinguish a player"
-                children:
+                
                     essentials.extinguish.use:
                         default: op
                         description: "Extinguish yourself"
@@ -106,7 +106,7 @@ permissions:
             essentials.fly:
                 default: false
                 description: "Fly in Survival or Adventure mode!"
-                children:
+                
                     essentials.fly.use:
                         default: op
                         description: "Switch your own fly mode"
@@ -116,7 +116,7 @@ permissions:
             essentials.feed:
                 default: false
                 description: "Feed yourself or other players"
-                children:
+                
                     essentials.feed.use:
                         default: op
                         description: "Feed yourself"
@@ -126,7 +126,7 @@ permissions:
             essentials.gamemode:
                 default: false
                 description: "Change your gamemode!"
-                children:
+                
                     essentials.gamemode.use:
                         default: op
                         description: "Change your own gamemode"
@@ -136,7 +136,7 @@ permissions:
             essentials.geoip:
                 default: false
                 description: "GeoLocation nodes"
-                children:
+                
                     essentials.geoip.show:
                         default: op
                         description: "See other's location in the real world"
@@ -146,7 +146,7 @@ permissions:
             essentials.getpos:
                 default: false
                 description: "Get any player's position"
-                children:
+                
                     essentials.getpos.use:
                         default: op
                         description: "Get your position"
@@ -156,7 +156,7 @@ permissions:
             essentials.god:
                 default: false
                 description: "Prevent a player to take any damage"
-                children:
+                
                     essentials.god.use:
                         default: op
                         description: "Prevent you to take damage"
@@ -172,7 +172,7 @@ permissions:
             essentials.heal:
                 default: false
                 description: "Heal yourself or other players"
-                children:
+                
                     essentials.heal.use:
                         default: op
                         description: "Heal yourself"
@@ -182,7 +182,7 @@ permissions:
             essentials.home:
                 default: false
                 description: "Get to your home!"
-                children:
+                
                     essentials.home.use:
                         default: true
                         description: "List or teleport to your homes"
@@ -198,7 +198,7 @@ permissions:
             essentials.itemspawn:
                 default: op
                 description: "Let you spawn any item using /item"
-                children:
+                
                     essentials.itemspawn.item-all:
                         default: op
                         description: "Let you spawn any item"
@@ -214,7 +214,7 @@ permissions:
             essentials.kill:
                 default: false
                 description: "Kill a player!"
-                children:
+                
                     essentials.kill.use:
                         default: op
                         description: "Commit to suicide"
@@ -233,7 +233,7 @@ permissions:
             essentials.mute:
                 default: false
                 description: "Mute a player from the chat"
-                children:
+                
                     essentials.mute.use:
                         default: op
                         description: "Mute a player from the chat"
@@ -246,7 +246,7 @@ permissions:
             essentials.near:
                 default: false
                 description: "Let you search for near players"
-                children:
+                
                     essentials.near.use:
                         default: op
                         description: "Display players near to you"
@@ -256,7 +256,7 @@ permissions:
             essentials.nick:
                 default: false
                 description: "Change your or others name"
-                children:
+                
                     essentials.nick.use:
                         default: op
                         description: "Change self nickname"
@@ -266,7 +266,7 @@ permissions:
             essentials.nuke:
                 default: false
                 description: "Spawn a thin carpet of bomb"
-                children:
+                
                     essentials.nuke.use:
                         default: op
                         description: "Spawn a thin carpet of bomb"
@@ -279,7 +279,7 @@ permissions:
             essentials.powertool:
                 default: false
                 description: "Allow to toggle and use PowerTool"
-                children:
+                
                     essentials.powertool.use:
                         default: op
                         description: "Access the /powertool command"
@@ -292,7 +292,7 @@ permissions:
             essentials.ptime:
                default: false
                description: "Change your current time!"
-               children:
+               
                     essentials.ptime.use:
                         default: op
                         description: "Change your own time"
@@ -308,7 +308,7 @@ permissions:
             essentials.repair:
                 default: false
                 description: "Repair the item you're holding"
-                children:
+                
                     essentials.repair.use:
                         default: op
                         description: "Access the /repair command"
@@ -336,11 +336,11 @@ permissions:
             essentials.sign:
                 default: false
                 description: "Allow to manage special signs"
-                children:
+                
                     essentials.sign.break:
                         default: false
                         description: "Allow to remove special signs"
-                        children:
+                        
                             essentials.sign.break.free:
                                 default: op
                                 description: "Allow to remove Free signs"
@@ -368,7 +368,7 @@ permissions:
                     essentials.sign.create:
                         default: false
                         description: "Allow to create special signs"
-                        children:
+                        
                             essentials.sign.create.free:
                                 default: op
                                 description: "Allow to create Free signs"
@@ -396,7 +396,7 @@ permissions:
                     essentials.sign.use:
                         default: false
                         description: "Allow to use special signs"
-                        children:
+                        
                             essentials.sign.use.free:
                                 default: op
                                 description: "Allow to use Free signs"
@@ -421,7 +421,7 @@ permissions:
             essentials.spawn:
                 default: false
                 description: "Teleport to server's main spawn"
-                children:
+                
                     essentials.spawn.use:
                         default: true
                         description: "Teleport to server's spawn position"
@@ -431,7 +431,7 @@ permissions:
             essentials.sudo:
                 default: false
                 description: "Run a command as another player"
-                children:
+                
                     essentials.sudo.use:
                         default: op
                         description: "Run a command as another player"
@@ -471,7 +471,7 @@ permissions:
             essentials.unlimited:
                 default: false
                 description: "Allow the player to place unlimited blocks"
-                children:
+                
                     essentials.unlimited.use:
                         default: op
                         description: "Access the /unlimited command"
@@ -481,7 +481,7 @@ permissions:
             essentials.vanish:
                 default: false
                 description: "Hide yourself or another player"
-                children:
+                
                     essentials.vanish.use:
                         default: op
                         description: "Hide yourself from other players"
@@ -494,7 +494,7 @@ permissions:
             essentials.warp:
                 default: false
                 description: "Teleport to a warp"
-                children:
+                
                     essentials.warp.use:
                         default: true
                         description: "Teleport to a warp"
